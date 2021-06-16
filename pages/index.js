@@ -14,7 +14,7 @@ export default function Home() {
         />
       </Head>
       {colors.map((color) => (
-        <Link href={`/${color.name}`}>
+        <Link href={`/${color.name}`} passHref={true}>
           <h2>{color.name}</h2>
         </Link>
       ))}
